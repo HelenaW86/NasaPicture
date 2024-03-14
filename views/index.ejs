@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>NASA picture</title>
-  <link rel="stylesheet" href="style/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>NASA picture</title>
+    <link rel="stylesheet" href="style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-   
     <div id="img-box">
-        <% if(mediaType === "image"){ %>
-            <img src=<%=url%> alt=<%=title%> width="100%" height="auto"/>
-        <%} else {%>
-            <iframe width="320" height="150" src=<%=videourl%> frameborder="0" allowfullscreen></iframe>
-   <% }%>
+      <% if(mediaType === "image"){ %>
+          <img src=<%=url%> alt=<%=title%> width="100%" height="auto"/>
+      <%} else {%>
+          <iframe width="320" height="150" src=<%=videourl%> frameborder="0" allowfullscreen></iframe>
+      <% }%>
     </div>
     <div id="text-box">
-    <h1><%=title%></h1>
-    <p><%=explanation%></p>
-</div>
+      <h1><%=title%></h1>
+      <p><%=explanation%></p>
+    </div>
   </body>
