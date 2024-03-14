@@ -8,7 +8,7 @@ const port = 3000;
 app.use(express.static("public"));
 app.get("/", async (req, res) => {
     try {
-        const picture = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=${process.env.API_KEY}`)
+        const picture = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`)
         console.log(picture.data)
         res.render("index.ejs", { url: picture.data.hdurl, mediaType: picture.data.media_type, videourl: picture.data.url, title: picture.data.title, explanation: picture.data.explanation })
     } catch (error) {
