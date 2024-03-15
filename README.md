@@ -11,7 +11,7 @@ To run this application locally, follow these steps:
 
 1. Clone this repository to your local machine.
 2. Install dependencies using **`npm install`**.
-3. Start the server using **`npm start`**.
+3. Start the server using **`nodemon index.js`**.
 4. Open your web browser and navigate to **`http://localhost:3000`** to view the application.
 
 ## Usage
